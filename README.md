@@ -73,7 +73,8 @@ Document the entire project, including setup instructions, code snippets, and ex
 The AI Test Generation Bot project provides a robust solution for generating tests from PDF content. The system extracts information, generates embeddings, and creates diverse and relevant multiple-choice questions. Scalability considerations and an evaluation framework ensure the project's effectiveness and usability.
 
 
-
+# Demo Video Link -
+https://drive.google.com/file/d/1uUojGno53JGnHssWFQFQGiai5ixNdASV/view?usp=sharing
 
 
 # Summary Report
