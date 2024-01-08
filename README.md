@@ -1,9 +1,13 @@
-# AI-Test-Generation-Bot
-Project Overview :
+# AI Test Generation Bot Documentation
+
+Project Overview:
 The AI Test Generation Bot is designed to process PDF files, extract relevant information, generate embeddings, and create multiple-choice questions based on the content. The project uses technologies such as TensorFlow Hub, PDFMiner, and ReportLab for PDF processing, embedding generation, and PDF export, respectively.
-Steps
+
+# Steps
 Step 1: Setting Up the Environment
+
 Ensure that you have the necessary dependencies installed. Key dependencies include TensorFlow, TensorFlow Hub, PDFMiner, and ReportLab.
+
 Step 2: Importing Libraries
 
       pip install tensorflow tensorflow-hub pdfminer.six reportlab
@@ -14,7 +18,7 @@ Step 3: Extracting Text from PDFs
      from pdfminer.high_level import extract_text
      import tensorflow_hub as hub
     from reportlab.pdfgen import canvas
-   import random
+    import random
 
 Step 4: Generating Embeddings
 
@@ -42,7 +46,7 @@ Step 6: User Interface
 
 Step 7: Exporting Questions to PDF
 
-     def export_to_pdf_multi(questions, difficulty_level, pdf_path=r"C:\Users\bardw\Desktop\PDF Processing\generated_test.pdf"):
+    def export_to_pdf_multi(questions, difficulty_level, pdf_path=r"C:\Users\bardw\Desktop\PDF Processing\generated_test.pdf"):
     c = canvas.Canvas(pdf_path)
     c.save()
 
@@ -67,3 +71,35 @@ Document the entire project, including setup instructions, code snippets, and ex
 # Conclusion
 
 The AI Test Generation Bot project provides a robust solution for generating tests from PDF content. The system extracts information, generates embeddings, and creates diverse and relevant multiple-choice questions. Scalability considerations and an evaluation framework ensure the project's effectiveness and usability.
+
+
+
+
+
+# Summary Report
+
+Approach Taken
+
+PDF Processing: Used PDFMiner to extract text from PDF files asynchronously.
+Embedding Generation: Utilized TensorFlow Hub for generating embeddings using a pre-trained Universal Sentence Encoder.
+
+Question Generation: Developed a function to create multiple-choice questions based on embeddings with an option for bias mitigation.
+
+User Interface: Built a simple command-line interface for user interaction.
+
+# Challenges Faced
+
+TensorFlow Compatibility: Faced compatibility issues with TensorFlow versions. Resolved by ensuring the appropriate version is installed.
+
+PDF Text Extraction: Handling variations in PDF formats required adjusting the extraction process.
+
+# Suggestions for Improvement
+
+Enhanced Bias Mitigation: Implement more sophisticated bias mitigation strategies for diverse and fair question generation.
+
+User Interface Improvement: Develop a graphical user interface (GUI) for better usability.
+
+Scalability: Optimize the code for scalability, allowing the application to efficiently process a large number of PDF files.
+
+
+
